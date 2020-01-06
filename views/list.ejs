@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>to donlist</title>
+	<link rel="stylesheet" type="text/css" href="todo.css">
+</head>
+<body>
+<div class="head">	
+<h1><%=listtitle%></h1>
+</div>
+<div class="todos">
+ <p class="para"> ADD YOUR TODO's</p>
+<% for( var i=0;i<content.length;i++){ %>
+<div class="prac">
+ <input type="checkbox"> <p><%= content[i] %></p>
+</div>
+ 	<% }; %>
+<form action="/" method="post" autocomplete="off">
+	<input type="text" name="tex">
+	<button type="submit" name="but"value=<%=listtitle%>>+</button>
+</form>
+</div>
+</body>
+</html>
