@@ -22,10 +22,18 @@ app.get("/",function(req,res){
 });
 app.post("/",function(req,res){
 	console.log(req.body.but);
+	console.log(req.body);
 	if(req.body.but==="worklist"){
        var item=req.body.tex;
        workis.push(item);
        res.redirect("/work");
+	}
+	else if(req.body.but==="reset"){
+         items=[];
+         workis=[];
+         imp=[];
+         res.redirect("/");
+
 	}
 	else if(req.body.but==="important") {
 		 var item=req.body.tex;

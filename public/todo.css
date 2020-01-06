@@ -88,3 +88,15 @@ input[type="text"]:focus {
   color: grey;
   opacity: 1;
 }
+.but1{
+  min-height: 40px;
+  width: 100px;
+  border-radius: 15%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 5px;
+  border-width: 0;
+  float:right;
+}
